@@ -1,3 +1,0 @@
-in several of the papers they use multiple linear regression
-this is likely because they are using basic techniques like excel or JMP or similar as opposed to svr or rf.  
-For testing we do need it and adding an extra model shouldn't hurt (the feature selection is the slow step not checking between models)
