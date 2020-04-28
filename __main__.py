@@ -294,7 +294,7 @@ class Main_Machine_Learning_Window(QtWidgets.QMainWindow, form_class):
         #don't use else.  if nothing is clicked (they hit the x in the top right) they should not be channeled into any function
         if custom_msg_box.clickedButton() == new_button:
             if not self.initial_output_loc:
-                QtWidgets.QMessageBox.information(self, "Error", "QSRR Automater lacks permission to write in current output folder.  Please use the \"Choose Output Folder\" folder in the pull down menu in the top left corner to select a new folder and try again")
+                QtWidgets.QMessageBox.information(self, "Error", "QSRR Automator lacks permission to write in current output folder.  Please use the \"Choose Output Folder\" folder in the pull down menu in the top left corner to select a new folder and try again")
                 return
             self.train_the_model()
         elif custom_msg_box.clickedButton() == load_button:
@@ -391,7 +391,7 @@ class Main_Machine_Learning_Window(QtWidgets.QMainWindow, form_class):
             return
         #only if the output folder is in an admin locked location. if the output location is changed this check is not tripped.  likely to be completely unnecessary but one if won't slow us too much
         if not self.initial_output_loc:
-            QtWidgets.QMessageBox.information(self, "Error", "QSRR Automater lacks permission to write in current output folder.  Please use the \"Choose Output Folder\" folder in the pull down menu in the top left corner to select a new folder and try again")
+            QtWidgets.QMessageBox.information(self, "Error", "QSRR Automator lacks permission to write in current output folder.  Please use the \"Choose Output Folder\" folder in the pull down menu in the top left corner to select a new folder and try again")
             return
             
         #need to warn the user if we are going to overwrite a file

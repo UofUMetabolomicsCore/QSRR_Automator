@@ -166,7 +166,7 @@ def get_default_values(folder_location, get_user_defaults):
         dict_to_use = user_settings_and_values
         duplicate_list_to_check = user_settings_min_max
         #need to go a step up in the output folder
-        default_settings = {"Output Folder": os.path.join(os.path.dirname(folder_location), "QSRR_Automater_Output"), "Processors_to_Use": multiprocessing.cpu_count()-1} #set the defaults for this one.
+        default_settings = {"Output Folder": os.path.join(os.path.dirname(folder_location), "QSRR_Automator_Output"), "Processors_to_Use": multiprocessing.cpu_count()-1} #set the defaults for this one.
     else:
         file_name_to_use = os.path.join(folder_location, PROGRAMER_SETTINGS_FILE)
         dict_to_use = programmer_settings_and_values
