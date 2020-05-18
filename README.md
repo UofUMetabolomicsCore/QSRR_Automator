@@ -11,7 +11,7 @@ The code requires the following dependencies:
 
 it is advised to use anaconda due to the difficulty in installing rdkit, since "conda install rdkit" should package it appropriately.  Instructions for if conda installation fails or you wish to use a different python environment can be found here: https://www.rdkit.org/docs/Install.html.  All other dependencies are available as standard pip installations
 
-To use, download all files into a folder and run the "\__main\__.py".  In Windows this should automatically occur with a "python {full path of code folder} command in the command line. QSRR Automator does require the ability to write folders and files and its default location for writing is immediately adjacent to the folder containing the code files. It is advisable to place the QSRR Automater folder in an easy to access location that does not require administrator access to write to.
+To use, download all files into a folder and run the "\_\_main\_\_.py".  In Windows this should automatically occur with a "python {full path of code folder} command in the command line. QSRR Automator does require the ability to write folders and files and its default location for writing is immediately adjacent to the folder containing the code files. It is advisable to place the QSRR Automater folder in an easy to access location that does not require administrator access to write to.
 
 QSRR Automater will open a GUI which should hopefully be relatively self-explanatory.
 
