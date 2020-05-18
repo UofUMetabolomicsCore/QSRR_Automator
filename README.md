@@ -15,4 +15,4 @@ To use, download all files into a folder and run the "\_\_main\_\_.py".  In Wind
 
 QSRR Automater will open a GUI which should hopefully be relatively self-explanatory.
 
-For further details on the various GUI elements, settings, and outputs please read QSRR Automator Instruction Manual.docx, provided along with the other files.
+For further details on the various GUI elements, settings, and outputs please read "QSRR Automator Instruction Manual.docx", provided along with the other files.
