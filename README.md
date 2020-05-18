@@ -1,3 +1,18 @@
-# QSRR_Automator
-Easy to use Automation software for creation of Retention Time prediction machine learning models
-To use, download all files into a folder and run the __main__.py.  Read QSRR Automater Instruction Manual.docx for further instructions
+# QSRR Automator
+Easy to use Automation software for creation of Retention Time prediction machine learning models. 
+QSRR Automator was written in and tested on the Windows operating system. There may be bugs if run on Apple or Linux operating systems.
+The code is provided here for transparency and the ability for the user to modify if desired.  An .exe version is provided at {}.
+
+The code requires the following dependencies:
+-rdkit
+-mordred
+-pyqt5
+-scikit-learn
+
+it is advised to use anaconda due to the difficulty in installing rdkit, since "conda install rdkit" should package it appropriately.  Instructions for if conda installation fails or you wish to use a different python environment can be found here: https://www.rdkit.org/docs/Install.html.  All other dependencies are available as standard pip installations
+
+To use, download all files into a folder and run the "__main__.py".  QSRR Automator does require the ability to write folders and files and it's default location for writing is immediately adjacent to the folder containing the code files. It is advisable to place the QSRR Automater folder in an easy to access location that does not require administrator access to write to.
+
+QSRR Automater will open a GUI which should hopefully be relatively self-explanatory.
+
+For further details on the various GUI elements, settings, and outputs please read QSRR Automator Instruction Manual.docx, provided along with the other files.
