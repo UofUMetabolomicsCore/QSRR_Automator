@@ -8,6 +8,7 @@ The code requires the following dependencies:
 -mordred
 -pyqt5
 -scikit-learn
+-pyqt
 
 There are other dependencies which likely already installed in base python installations or as prerequisites to the other dependencies:
 -matplotlib
