@@ -1,7 +1,7 @@
 # QSRR Automator
 Easy to use Automation software for creation of Retention Time prediction machine learning models. 
 QSRR Automator was written in and tested on the Windows operating system. There may be bugs if run on Apple or Linux operating systems.
-The code is provided here for transparency and the ability for the user to modify if desired.  An .exe version is provided at {}.
+The code is provided here for transparency and the ability for the user to modify if desired.  An .exe version is provided at https://github.com/UofUMetabolomicsCore/QSRR_Automator/releases/tag/v1_exe.
 
 The code requires the following dependencies:
 -rdkit
@@ -22,3 +22,4 @@ To use, download all files into the same folder and run the "\_\_main\_\_.py".  
 QSRR Automater will open a GUI which should hopefully be relatively self-explanatory.
 
 For further details on the various GUI elements, settings, and outputs please read "QSRR Automator Instruction Manual.docx", provided along with the other files.
+
