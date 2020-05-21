@@ -217,7 +217,7 @@ class SVR_Subclass(Machine_Learning_Superclass):
 #not sure how well this will work out, but it is important for testing and it hurts nothing
 #this will mostly be based on the Random Forest class because there is no need for grid search (no relevant variables)
 #this should not be done without feature selection (it's going to overfit because it can't prune out features)
-class MLR_Subclass(Machine_Learning_Superclass):
+class LR_Subclass(Machine_Learning_Superclass):
     def __init__(self, Number_of_Cross_Validations, Processors_to_Use, Trees_in_Forest, Feature_Selection_Method, auto_feature_selection_step_size, auto_feature_selection_cv, minimum_feature_allowed_for_auto, manual_features_desired):
         Machine_Learning_Superclass.__init__(self, Number_of_Cross_Validations, Processors_to_Use, Trees_in_Forest, Feature_Selection_Method, auto_feature_selection_step_size, auto_feature_selection_cv, minimum_feature_allowed_for_auto, manual_features_desired) #get the basic values (can reset later if need be)               
         self.grid_search = False # no need to actually do a grid search here (only variable that is really relevant
@@ -252,8 +252,8 @@ class Choice_Subclass(Machine_Learning_Superclass):
         for key in self.svr_variables.keys(): svr_dict[key] = self.svr_variables[key]
         self.all_grid_search_variables.append(svr_dict)
         
-        mlr_dict = {"machine_learning_step": [LinearRegression()]}
-        self.all_grid_search_variables.append(mlr_dict)
+        lr_dict = {"machine_learning_step": [LinearRegression()]}
+        self.all_grid_search_variables.append(lr_dict)
         
         
         #pipelines like the other subclasses

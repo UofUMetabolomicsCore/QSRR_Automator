@@ -116,7 +116,7 @@ user_settings_and_values = {
     "NaNs allowed per sample": Float_Values("NaNs allowed per sample", 0.0, .90),
     "Correlation Coefficient (Pearson)": Float_Values("Correlation Coefficient (Pearson)", .05, 1.00),
     "Excel Writing": String_Values("Excel Writing", True, ["true", "false"], True), 
-    "Model To Use": String_Values("Model To Use", False, ["Choose Best", "Random Forest", "SVR", "MLR"], False),
+    "Model To Use": String_Values("Model To Use", False, ["Choose Best", "Random Forest", "SVR", "LR"], False),
     "Number of Cross Validations": Int_Values("Number of Cross Validations", 5, 10),
     "Feature Selection Method": String_Values("Feature Selection Method", False, ["Automatic", "None", "Manual"], False),
     "Automatic Feature Selection CV": Int_Values("Automatic Feature Selection CV", 5, 10),

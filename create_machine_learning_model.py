@@ -93,8 +93,8 @@ def model_training_manager(input_data, infile, settings, programmer_settings):
             variables_to_test["machine_learning_step__gamma"] = geomspace(settings["gamma min"], settings["gamma max"], settings["gamma number of steps"])
             Machine_Learning_Object =mlrp.SVR_Subclass(SVR_KERNEL, variables_to_test, settings["Number of Cross Validations"], settings["Processors_to_Use"], programmer_settings["Trees in Random Forest"], settings["Feature Selection Method"], programmer_settings["Auto Feauture Selection Step Size"], settings["Automatic Feature Selection CV"], settings["Min Number of Features"], settings["Target Number Features for Manual"])
         
-        elif settings["Model To Use"] == "MLR":
-            Machine_Learning_Object = mlrp.MLR_Subclass(settings["Number of Cross Validations"], settings["Processors_to_Use"], programmer_settings["Trees in Random Forest"], settings["Feature Selection Method"], programmer_settings["Auto Feauture Selection Step Size"], settings["Automatic Feature Selection CV"], settings["Min Number of Features"],settings["Target Number Features for Manual"])
+        elif settings["Model To Use"] == "LR":
+            Machine_Learning_Object = mlrp.LR_Subclass(settings["Number of Cross Validations"], settings["Processors_to_Use"], programmer_settings["Trees in Random Forest"], settings["Feature Selection Method"], programmer_settings["Auto Feauture Selection Step Size"], settings["Automatic Feature Selection CV"], settings["Min Number of Features"],settings["Target Number Features for Manual"])
         elif settings["Model To Use"] == "Choose Best":
             svr_variables = {"machine_learning_step__C": geomspace(settings["C min"], settings["C max"], settings["C number of steps"]), "machine_learning_step__gamma": geomspace(settings["gamma min"], settings["gamma max"], settings["gamma number of steps"])}
             

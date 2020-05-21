@@ -51,6 +51,7 @@ import settings_from_model_graph as sfmg
 
 #from matplotlib.backends.backend_qt4agg import FigrueCanvasQTAgg as FigureCanvas
 temp_loc = os.path.dirname(os.path.abspath(__file__))
+#temp_loc = os.path.dirname(os.path.abspath(sys.executable))
 
 graph_filename = "Successful_Graph.pdf"
 
@@ -74,6 +75,7 @@ class display_training_results(QtWidgets.QDialog, form_class):
         self.value_mean_cross_val_r2 = final_model.r2_mean
         self.value_median_cross_val_r2 = final_model.r2_median
         self.mean_time_error_time_units = final_model.mae_mean
+        self.std_dev_time_error_time_units = final_model.mae_std
         self.final_model_mean_r2_score = final_model.final_r2_score
         self.final_model_mean_mae_score = final_model.final_mae
         
@@ -113,6 +115,7 @@ class display_training_results(QtWidgets.QDialog, form_class):
         self.mean_cv_r2.setText("Mean Training R2 = {:.3f}".format(self.value_mean_cross_val_r2))
         self.median_cv_r2.setText("Median Training R2 = {:.3f}".format(self.value_median_cross_val_r2))
         self.mean_cv_absolute.setText("Expected Absolute Error of Predictions = {:.3f}".format(self.mean_time_error_time_units))
+        self.std_dev_mae_cv.setText("Std Dev of Expected Absolute Error = {:3f}".format(self.std_dev_time_error_time_units))
         self.final_r2_score.setText("Final Model R2 Score = {:.3f}".format(self.final_model_mean_r2_score))
         self.final_absolute_error.setText("Final Model Mean Absolute Error = {:.3f}".format(self.final_model_mean_mae_score))
         
